@@ -1,0 +1,12 @@
+.Timer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #EE5A24;
+    font-weight: bold;
+}
+
+.Timer--timeUp {
+    bottom: 20%;
+    left: 50%;
+}

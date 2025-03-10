@@ -1,0 +1,44 @@
+.UserInfo--form {
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.UserInfo form {
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    padding-bottom: 10px;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.UserInfo--formLabel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.form-control {
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 72%;
+}
+
+.UserInfo--submited {
+    margin-top: 20px;
+    color: darkgreen;
+}
+
+.UserInfo--start {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+    margin-top: 10px;    
+}

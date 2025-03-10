@@ -1,0 +1,102 @@
+@keyframes fadeInUp {
+    0% {
+        margin-bottom: -1%;
+        transform: rotateX(100deg);
+    }
+    100% {
+        margin-bottom: 0;
+        transform: rotateX(0deg);
+    }
+}
+
+.Questions--container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.Questions--form {    
+    padding-left: 5%;
+    width: 90%;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+.Questions--form h6 {
+    border: 1px solid var(--primary);
+    border-bottom: none;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin: 0;
+    width: 70%;
+    font-size: 15px;
+    animation-name: fadeInUp;
+    animation-duration: 500ms;    
+}
+
+.Questions--form form {
+    border: 1px solid var(--primary);
+    border-top: none;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    width: 70%;
+}
+
+.form-check-label {    
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom: 1px solid var(--primary);
+    border-radius: 20px;
+    padding: 7px 0;
+}
+
+.form-check-label :checked {
+    box-shadow: none;
+    background: var(--secondary);
+}
+
+.form-check-label :hover {
+    background-color: var(--primary);
+    color: darkgreen;
+    border-radius: 20px;
+}
+
+.myLabel {    
+    background-color: white;
+    border-bottom: none;
+}
+
+.form-check-input {
+    border: 1px dotted var(--secondary);    
+    animation-name: fadeInUp;
+    animation-duration: 500ms;
+}
+
+.Questions--form .options {
+    width: 120px;
+    height: 27px;
+    animation-name: fadeInUp;
+    animation-duration: 500ms;
+}
+
+.Questions--buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Questions--form .Annotation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: var(--secondary);
+    animation-name: fadeInUp;
+    animation-duration: 400ms;
+}

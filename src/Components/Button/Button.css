@@ -1,0 +1,19 @@
+.btn {
+    font-size: var(--buttonFontSize);    
+    background-color: var(--primary);
+    border: none;
+    border-radius: 15px;
+    padding:10px;
+    margin-right: 15px;
+    color: darkgreen;
+}
+
+.custom {
+    background-color: white;
+    border: 1px solid var(--primary);
+    font-size: 12px;
+}
+
+.Button :hover {  
+    background-color: #78e08f;       
+}
