@@ -59,6 +59,11 @@ const Question = () => {
         }
     };
 
+    const handlePreviousQuestion = () => {
+        setCurrentQuestion(currentQuestion - 1);
+        localStorage.setItem('current_question', JSON.stringify(currentQuestion));
+    }
+
     const handleCloseModal = () => {
         setOpenModal(false);
     };
@@ -101,7 +106,7 @@ const Question = () => {
                             }                        
                             <div className="Questions--buttons">                              
                                 {currentQuestion !== 0 &&                            
-                                    <Button className="btn mt-2 custom" handleClick={() => setCurrentQuestion(currentQuestion - 1)}> سوال قبلی </Button>
+                                    <Button className="btn mt-2 custom" handleClick={handlePreviousQuestion}> سوال قبلی </Button>
                                 }
                                 <Button type="submit" className="btn mt-2"> ثبت </Button>
                             </div>
